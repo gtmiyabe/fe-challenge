@@ -91,24 +91,26 @@ const InnerContainer = styled.div`
 const RowWrapper = styled.div`
   position: relative;
 
-  :nth-child(odd) > div > div > div :last-child {
-    color: #00008b;
-  }
+  // :nth-child(odd) > div > div > div :last-child {
+  //   color: #00008b;
+  // }
 
   &:before {
     content: ${props => `'${props.sectionName}'`};
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
+    transform: rotate(180deg);
     writing-mode: vertical-rl;
     left: 45px;
     height: 100%;
     text-align: center;
+
   }
   &:after {
     content: "";
     position: absolute;
     background-image: linear-gradient(to right, transparent 50%, #f8f9fa 50%);
-    background-size: 50px 100%;
+    background-size: 20px 100%;
     bottom: 0;
     left: -20px;
     width: calc(100% + 40px);
@@ -149,7 +151,8 @@ const Item = styled.div`
 
 const ItemTitle = styled.div`
   font-size: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
 
   &:before {
     content: "";
@@ -172,13 +175,13 @@ const Ellipse = styled.img`
 
 const ItemDescription = styled.div`
   font-size: 14px;
-  text-align: right;
+  line-height: 20px;
 `;
 
 const Header = styled.div`
   padding: 15px 20px;
   font-size: 28px;
-  font-weight: 800;
+  text-align: center;
 `;
 
 export default TimelineChallenge;

@@ -2,7 +2,7 @@ import React, { lazy, Suspense, Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const TimelineChallengeL1 = lazy(() =>
-  import("pages/TimelineChallenge/TimelineChallengeL1")
+  import("pages/TimelineChallengeL1/TimelineChallengeL1")
 );
 
 class App extends Component {

@@ -80,7 +80,7 @@ const InnerContainer = styled.div`
       content: unset;
     }
 
-    > div:last-child .timeline-item:last-of-type {
+    > div:last-child {
       &:before {
         content: unset;
       }

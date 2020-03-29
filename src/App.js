@@ -5,6 +5,10 @@ const TimelineChallengeL1 = lazy(() =>
   import("pages/TimelineChallengeL1/TimelineChallengeL1")
 );
 
+const TimelineChallengeL2 = lazy(() =>
+  import("pages/TimelineChallengeL2/TimelineChallengeL2")
+);
+
 class App extends Component {
   render() {
     return (
@@ -15,6 +19,11 @@ class App extends Component {
               exact
               path="/timeline-challenge-l1"
               render={() => <TimelineChallengeL1 />}
+            />
+            <Route
+              exact
+              path="/timeline-challenge-l2"
+              render={() => <TimelineChallengeL2 />}
             />
           </Switch>
         </Suspense>

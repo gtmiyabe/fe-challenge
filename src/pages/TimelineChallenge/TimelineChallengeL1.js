@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import ellipse from "resources/ellipse.svg";
 
-import { timeline } from "./timelineConfig";
+import { timeline } from "./timelineConfigL1";
 
 const TimelineChallenge = () => {
   let renderRight = true;
@@ -88,21 +88,17 @@ const InnerContainer = styled.div`
   }
 `;
 
-// margin-left: calc(50% - 50vw);
-// margin-right: calc(50% - 50vw);
-// ${media.large`
-// margin-left: unset;
-// margin-right: unset;
-// `}
-
 const RowWrapper = styled.div`
   position: relative;
+
+  :nth-child(odd) > div > div > div :last-child {
+    color: #00008b;
+  }
 
   &:before {
     content: ${props => `'${props.sectionName}'`};
     position: absolute;
-    font-size: 20px;
-    transform: rotate(180deg);
+    font-size: 25px;
     writing-mode: vertical-rl;
     left: 45px;
     height: 100%;
@@ -112,7 +108,7 @@ const RowWrapper = styled.div`
     content: "";
     position: absolute;
     background-image: linear-gradient(to right, transparent 50%, #f8f9fa 50%);
-    background-size: 20px 100%;
+    background-size: 50px 100%;
     bottom: 0;
     left: -20px;
     width: calc(100% + 40px);
@@ -153,8 +149,7 @@ const Item = styled.div`
 
 const ItemTitle = styled.div`
   font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 
   &:before {
     content: "";
@@ -170,21 +165,20 @@ const ItemTitle = styled.div`
 
 const Ellipse = styled.img`
   position: absolute;
-  ${props => props.right && 'left: 0; transform: translateX(-50%);'}
-  ${props => props.left && 'right: 0; transform: translateX(50%);'}
+  ${props => props.right && "left: 0; transform: translateX(-50%);"}
+  ${props => props.left && "right: 0; transform: translateX(50%);"}
   top: 22px;
 `;
 
 const ItemDescription = styled.div`
   font-size: 14px;
-  line-height: 20px;
+  text-align: right;
 `;
 
 const Header = styled.div`
   padding: 15px 20px;
-
-  text-align: center;
   font-size: 28px;
+  font-weight: 800;
 `;
 
 export default TimelineChallenge;

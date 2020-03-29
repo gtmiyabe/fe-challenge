@@ -9,7 +9,7 @@ export const timeline = [
       },
       {
         description:
-          "When the investment window opens, you will submit your desired allocation for the YieldStreet Prism Fund.<br /><br /><b>Note</b>: Funds will <u>not</u> be pulled from your YieldStreet Wallet at this time, but will be reserved for the Fund in your YieldStreet Wallet.",
+          "When the investment window opens, you will submit your desired allocation for the YieldStreet Prism Fund.",
         title: "Investment Window Opens",
         disable: true
       },

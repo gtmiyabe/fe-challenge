@@ -1,8 +1,8 @@
 import React, { lazy, Suspense, Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const TimelineChallenge = lazy(() =>
-  import("pages/TimelineChallenge/TimelineChallenge")
+const TimelineChallengeL1 = lazy(() =>
+  import("pages/TimelineChallenge/TimelineChallengeL1")
 );
 
 class App extends Component {
@@ -13,8 +13,8 @@ class App extends Component {
           <Switch>
             <Route
               exact
-              path="/timeline-challenge"
-              render={() => <TimelineChallenge />}
+              path="/timeline-challenge-l1"
+              render={() => <TimelineChallengeL1 />}
             />
           </Switch>
         </Suspense>

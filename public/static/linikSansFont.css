@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Linik Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Linik Sans'), url('LinikSans-Light.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linik Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Linik Sans'), url('LinikSans-LightItalic.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linik Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Linik Sans'), url('LinikSans-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linik Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Linik Sans'), url('LinikSans-Italic.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linik Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Linik Sans'), url('LinikSans-SemiBold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linik Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Linik Sans'), url('LinikSans-SemiBoldItalic.otf') format('opentype');
+  font-display: swap;
+}

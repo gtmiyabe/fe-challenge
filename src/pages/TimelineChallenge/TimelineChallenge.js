@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import ellipse from "resources/ellipse.svg";
 
-import { timeline } from "./timelineConfigL2";
+import { timeline } from "./timelineConfig";
 
 const TimelineChallenge = () => {
   let renderRight = true;
@@ -146,8 +146,7 @@ const Item = styled.div`
 
 const ItemTitle = styled.div`
   font-size: 16px;
-  margin-bottom: 4px;
-  font-weight: 600;
+  margin-bottom: 14px;
 
   &:before {
     content: "";
@@ -170,13 +169,14 @@ const Ellipse = styled.img`
 
 const ItemDescription = styled.div`
   font-size: 14px;
-  line-height: 20px;
+
+  text-align: right;
 `;
 
 const Header = styled.div`
   padding: 15px 20px;
   font-size: 28px;
-  text-align: center;
+  font-weight: 600;
 `;
 
 export default TimelineChallenge;

@@ -1,16 +1,8 @@
 import React, { lazy, Suspense, Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const TimelineChallengeL1 = lazy(() =>
-  import("pages/TimelineChallengeL1/TimelineChallengeL1")
-);
-
-const TimelineChallengeL2 = lazy(() =>
-  import("pages/TimelineChallengeL2/TimelineChallengeL2")
-);
-
-const TimelineChallengeL3 = lazy(() =>
-  import("pages/TimelineChallengeL3/TimelineChallengeL3")
+const TimelineChallenge = lazy(() =>
+  import("pages/TimelineChallenge/TimelineChallenge")
 );
 
 class App extends Component {
@@ -19,21 +11,7 @@ class App extends Component {
       <Router>
         <Suspense fallback={() => <div>Loading...</div>}>
           <Switch>
-            <Route
-              exact
-              path="/timeline-challenge-l1"
-              render={() => <TimelineChallengeL1 />}
-            />
-            <Route
-              exact
-              path="/timeline-challenge-l2"
-              render={() => <TimelineChallengeL2 />}
-            />
-            <Route
-              exact
-              path="/timeline-challenge-l3"
-              render={() => <TimelineChallengeL3 />}
-            />
+            <Route exact path="/" render={() => <TimelineChallenge />} />
           </Switch>
         </Suspense>
       </Router>

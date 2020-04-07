@@ -16,6 +16,15 @@ You will also see any lint errors in the console.
 
 If you run this project, you'll notice a component that resembles a timeline.
 
-In this link [INSERT LINK] you'll find the new designs for this component.
+In this [link](https://www.figma.com/file/XwHlewXk0l3dto1paiPTWa/EngineeringTest) you'll find the new designs for this component.
 
 Your test is to adapt this component to be as close as possible to the new designs.
+
+To view details on figma pages you'll need to login, we have this account setup for this test:
+
+Login: `challengefe@yieldstreet.com`
+Pw: `ChallengeFE`
+
+## Available time
+
+- 40 minutes

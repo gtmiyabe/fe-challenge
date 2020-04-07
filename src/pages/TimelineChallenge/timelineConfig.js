@@ -21,7 +21,7 @@ export const timeline = [
       {
         description:
           "Once all investor funds are pulled from the respective Wallets, it will take approximately two business days for initial investments to be made in the Fund and for the Fund to officially go active. Investors should expect to start seeing investment information in their portfolio once the Fund has been live for approximately two weeks.",
-        title: "“Go Active” Date"
+        title: `“Go Active” Date`
       }
     ],
     title: "First Month"
